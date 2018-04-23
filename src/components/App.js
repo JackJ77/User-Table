@@ -1,35 +1,14 @@
-import React, { Component } from 'react';
-import {
-  HashRouter,
-  Route,
-  NavLink
-} from 'react-router-dom';
-import Users from './Users';
-import CreateUser from './CreateUser';
-import EditUser from './EditUser';
+import React from 'react';
+import Users from './Users/Users';
+import CreateUser from './ManageUsers/CreateUser';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
-      <HashRouter>
-        <div className="container">
-        <ul className="nav">
-          <li className="nav-item">
-            <NavLink className="nav-link active" to="/">Home</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/newuser">Create User</NavLink>
-          </li>
-        </ul>
-          <div className="content">
-            <Route exact path="/" component={Users}/>
-            <Route path="/newuser" component={CreateUser}/>
-            <Route path="/users/:id" component={EditUser}/>
-          </div>
-        </div>
-      </HashRouter>
+      <div className="container">
+        <CreateUser />
+        <Users />
+      </div>
     );
-  }
 }
 
 export default App;

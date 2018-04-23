@@ -2,4 +2,47 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #777;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.plus-icon,
+.issue-icon,
+.success-icon {
+  font-size: 26px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.issue-icon {
+  color: #d61111;
+}
+
+.success-icon {
+  color: #20c111;
+}
+
+.reset-button {
+  cursor: pointer;
+  margin-left: 25px;
+  color: #fc2d2d;
+  text-decoration: underline;
+}
+
+input {
+  border-radius: 2px !important;
+}
+
+button {
+  border-radius: 2px !important;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+::-ms-placeholder,
+::placeholder{
+    color: #ccc !important;
 }
