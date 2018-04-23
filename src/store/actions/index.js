@@ -6,7 +6,7 @@ export const reverseUsers = (reversed) => {
 }
 
 export const loadUsersSuccess = (users) => {
-  return {type: types.LOAD_USERS_SUCCESS, users};
+  return {type: types.LOAD_USERS, users};
 };
 
 export const loadUsers = () => {

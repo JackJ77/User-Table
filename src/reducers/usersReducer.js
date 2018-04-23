@@ -3,7 +3,7 @@ import * as types from './../store/actions/actionTypes';
 export default function usersReducer(state = [], action) {
   switch(action.type) {
 
-    case types.LOAD_USERS_SUCCESS:
+    case types.LOAD_USERS:
      return action.users;
 
     case types.CREATE_USER:

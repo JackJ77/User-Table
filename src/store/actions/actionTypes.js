@@ -1,4 +1,4 @@
-export const LOAD_USERS_SUCCESS = 'LOAD_USERS_SUCCESS';
-export const CREATE_USER_SUCCESS = 'CREATE_USER';
-export const DELETE_USER_SUCCESS = 'DELETE_USER';
+export const LOAD_USERS = 'LOAD_USERS';
+export const CREATE_USER = 'CREATE_USER';
+export const DELETE_USER= 'DELETE_USER';
 export const REVERSE_USERS = 'REVERSE_USERS';
