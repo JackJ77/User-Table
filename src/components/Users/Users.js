@@ -17,17 +17,23 @@ class Users extends React.Component {
   }
 
   render() {
-    const users = this.props.users.map((user, id) => {
-      return (
-        <UserItem
-          key={user.id}
-          id={user.id}
-          username={user.username}
-          email={user.email}
-          onDelete={this.props.onDelete}
-          />
-      );
-    });
+    let users;
+
+    if (!this.props.users.length) {
+      users = <UserItem key={0} id="id" username="name" email="email" onDelete={this.props.onDelete} />;
+    } else {
+      users = this.props.users.map((user, id) => {
+        return (
+          <UserItem
+            key={user.id}
+            id={user.id}
+            username={user.username}
+            email={user.email}
+            onDelete={this.props.onDelete}
+            />
+        );
+      });
+    }
 
     return (
       <TableUsers handleClick={this.handleClick}>
